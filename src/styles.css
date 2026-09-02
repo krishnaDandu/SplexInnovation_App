@@ -1,0 +1,14 @@
+:root {
+  --splex-red: #e60000;
+  --splex-red-dark: #a90000;
+  --splex-bg: #101010;
+  --splex-panel: #181818;
+  --splex-text: #dedede;
+  --splex-muted: #a8a8a8;
+  --splex-white: #ffffff;
+}
+
+html { scroll-behavior: smooth; }
+body { margin: 0; min-width: 320px; background: var(--splex-bg); }
+button, input, textarea { font: inherit; }
+* { box-sizing: border-box; }

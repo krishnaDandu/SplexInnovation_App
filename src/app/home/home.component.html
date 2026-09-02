@@ -1,0 +1,75 @@
+<section class="home-hero">
+  <div class="hero-decoration line-left"></div>
+  <div class="hero-decoration line-right"></div>
+  <div class="hero-dot dot-one"></div>
+  <div class="hero-dot dot-two"></div>
+
+  <div class="container hero-content">
+    <div class="hero-copy">
+      <span class="badge-label">DIGITAL SOLUTIONS &amp; INNOVATION</span>
+      <h1>Turn Your Ideas Into<br><span>Digital Innovation</span></h1>
+      <p>We design modern websites, develop powerful applications, and provide dependable support to help your business grow in a digital world.</p>
+      <div class="hero-actions">
+        <a routerLink="/contactus" class="btn-primary-red"><i class="bi bi-arrow-right me-2"></i>Start Your Project</a>
+        <a routerLink="/services" class="btn-outline-light">View Services</a>
+      </div>
+    </div>
+
+    <div class="hero-image-wrap">
+      <img src="assets/img/about/about-wide-2.webp" alt="Digital technology workspace">
+      <div class="hero-stats">
+        <div><strong>Web</strong><span>Design</span></div>
+        <div><strong>Apps</strong><span>Development</span></div>
+        <div><strong>24/7</strong><span>Support</span></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="intro-section">
+  <div class="container">
+    <div class="section-heading">
+      <span>WHAT WE DO</span>
+      <h2>Technology that works for your business.</h2>
+      <p>From your first idea to long-term support, SPLEX Innovation provides practical digital solutions with a focus on quality, usability and sustainable growth.</p>
+    </div>
+
+    <div class="service-grid">
+      @for (service of services; track service.title) {
+        <article class="service-card">
+          <div class="icon-box"><i class="bi" [class]="service.icon"></i></div>
+          <h3>{{ service.title }}</h3>
+          <p>{{ service.text }}</p>
+          <a routerLink="/services">Learn more <i class="bi bi-arrow-right"></i></a>
+        </article>
+      }
+    </div>
+  </div>
+</section>
+
+<section class="home-about">
+  <div class="container about-grid">
+    <div class="about-image">
+      <img src="assets/img/about/about-14.webp" alt="SPLEX Innovation team working on digital solutions" loading="lazy">
+      <div class="experience-card"><strong>Build</strong><span>Innovate • Grow</span></div>
+    </div>
+    <div class="about-copy">
+      <span class="eyebrow">WHY SPLEX INNOVATION</span>
+      <h2>One partner for your digital journey.</h2>
+      <p>We combine creative thinking, development expertise and dependable support to help businesses establish and improve their digital presence.</p>
+      <ul>
+        <li><i class="bi bi-check2-circle"></i> User-focused and responsive digital experiences</li>
+        <li><i class="bi bi-check2-circle"></i> Practical solutions aligned with business goals</li>
+        <li><i class="bi bi-check2-circle"></i> Reliable support after launch</li>
+      </ul>
+      <a routerLink="/aboutus" class="text-link">Discover SPLEX Innovation <i class="bi bi-arrow-right"></i></a>
+    </div>
+  </div>
+</section>
+
+<section class="cta-section">
+  <div class="container cta-inner">
+    <div><span class="eyebrow">READY TO BUILD?</span><h2>Let's turn your next idea into reality.</h2></div>
+    <a routerLink="/contactus" class="btn-primary-red">Let's Talk <i class="bi bi-arrow-right ms-2"></i></a>
+  </div>
+</section>
