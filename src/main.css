@@ -4598,3 +4598,22 @@ section,
   /* Add your styles here */
 }
 .pd-t-120{padding-top: 120px !important;}
+.brand {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  text-decoration: none;
+}
+
+.brand img {
+  display: block;
+  max-height: 40px;
+  width: auto;
+}
+
+.brand-tag {
+  font-size: 0.8rem;
+  font-weight: 700;
+  color: #6b7280;
+  white-space: nowrap;
+}
