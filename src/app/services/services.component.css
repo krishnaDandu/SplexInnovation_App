@@ -1,5 +1,5 @@
 .page-hero {
-    padding: 170px 0 85px;
+    padding: 170px 0 20px;
     text-align: center;
     background: radial-gradient(circle at 50% 20%, #281315, #111 55%)
 }
@@ -25,7 +25,7 @@
 }
 
 .services-main {
-    padding: 95px 0;
+    padding: 20px 0  40px 0;
     background: #121212
 }
 
@@ -123,4 +123,19 @@
     .services-cta h2 {
         font-size: 30px
     }
+}
+
+ul{
+    list-style: none;
+    padding: 0;
+    margin: 30px 0;
+}
+.service-grid li{
+    margin: 15px 0;
+    color: #bbb;
+    display: flex;
+}
+.service-grid li i{
+    color: #f00 !important;
+    margin-right: 10px;
 }

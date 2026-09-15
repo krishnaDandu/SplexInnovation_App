@@ -1,9 +1,9 @@
 <section class="page-hero pd-t-120">
-      <!-- Section Title -->
-      <div class="container section-title">
-        <h2>Services</h2>
-        <p>Necessitatibus eius consequatur ex aliquid fuga eum quidem sint consectetur velit</p>
-      </div><!-- End Section Title -->
+    <!-- Section Title -->
+    <div class="container section-title">
+        <!-- <h2>Services</h2> -->
+        <p>Technology-driven solutions designed to simplify your business and accelerate growth.</p>
+    </div><!-- End Section Title -->
     <div class="container">
         <h1>Digital solutions built around your needs.</h1>
         <p>From websites and applications to ongoing support, we help you build a stronger digital presence.</p>
@@ -11,12 +11,64 @@
 </section>
 <section class="services-main">
     <div class="container">
-        <div class="service-grid">@for (service of services; track service[1]) {<article class="service-card">
-                <div class="icon"><i class="bi" [class]="service[0]"></i></div>
-                <h2>{{ service[1] }}</h2>
-                <p>{{ service[2] }}</p><a routerLink="/contactus">Discuss your project <i
-                        class="bi bi-arrow-right"></i></a>
-            </article>}</div>
+        <div class="service-grid"><article class="service-card">
+                <div class="icon"><i class="bi bi-laptop"></i></div>
+                <h2>Digital User Experience</h2>
+                <ul>
+                    <li><i class="bi bi-check2-circle"></i> Responsive and Interactive Design</li>
+                    <li><i class="bi bi-check2-circle"></i> Digital Experience Platform (DXP)</li>
+                    <li><i class="bi bi-check2-circle"></i> Analytics-Driven Customer Insightsh</li>
+                    <li><i class="bi bi-check2-circle"></i> UX design prototyping</li>
+                    <!-- <li><i class="bi bi-check2-circle"></i> CCode Accelerator for UI Engineering</li> -->
+                </ul>
+
+                <a routerLink="/contactus">Discuss your project <i class="bi bi-arrow-right"></i></a>
+            </article>
+        <article class="service-card">
+                <div class="icon"><i class="bi bi-gear"></i></div>
+                <h2>Support & Maintenance</h2>
+
+                <ul>
+                    <li><i class="bi bi-check2-circle"></i> User Support</li>
+                    <li><i class="bi bi-check2-circle"></i> Configuration Management</li>
+                    <li><i class="bi bi-check2-circle"></i> Corrective & Preventive Maintanence</li>
+                    <li><i class="bi bi-check2-circle"></i> SLA Management</li>
+                    <li><i class="bi bi-check2-circle"></i> Production Support 24*7</li>
+                </ul>
+
+                <a routerLink="/contactus">Discuss your project <i class="bi bi-arrow-right"></i></a>
+            </article>
+            <article class="service-card">
+                <div class="icon"><i class="bi bi-code-slash"></i></div>
+                <h2>Product Engineering</h2>
+
+                <ul>
+                    <li><i class="bi bi-check2-circle"></i> Product Ideation (MVP) & Design</li>
+                    <li><i class="bi bi-check2-circle"></i> Product Development</li>
+                    <li><i class="bi bi-check2-circle"></i> Productionization</li>
+                    <li><i class="bi bi-check2-circle"></i> Product Testing & Deployment (DevOps)</li>
+                    <li><i class="bi bi-check2-circle"></i> Low Code Accelerator for Faster time to market</li>
+                </ul>
+
+                <a routerLink="/contactus">Discuss your project <i class="bi bi-arrow-right"></i></a>
+            </article>
+            <!-- <article class="service-card">
+                <div class="icon"><i class="bi bi-code-slash"></i></div>
+                <h2>Product Engineering</h2>
+
+                <ul>
+                    <li><i class="bi bi-check2-circle"></i> Product Ideation (MVP) & Design</li>
+                    <li><i class="bi bi-check2-circle"></i> Product Development</li>
+                    <li><i class="bi bi-check2-circle"></i> Productionization</li>
+                    <li><i class="bi bi-check2-circle"></i> Product Testing & Deployment (DevOps)</li>
+                    <li><i class="bi bi-check2-circle"></i> Low Code Accelerator for Faster time to market</li>
+                </ul>
+
+                <a routerLink="/contactus">Discuss your project <i class="bi bi-arrow-right"></i></a>
+            </article> -->
+        </div>
+
+
     </div>
 </section>
 <section class="services-cta">

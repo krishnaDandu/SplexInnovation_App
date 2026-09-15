@@ -457,7 +457,13 @@ h6 {
     display: block;
   }
 }
-
+.text-center {
+  text-align: center !important;
+}
+.pd-t-b-20 {
+  padding-top: 20px !important;
+  padding-bottom: 20px !important;
+}
 /*--------------------------------------------------------------
 # Global Footer
 --------------------------------------------------------------*/
@@ -823,7 +829,7 @@ section,
 --------------------------------------------------------------*/
 .section-title {
   text-align: center;
-  padding-bottom: 60px;
+  padding-bottom: 20px;
   position: relative;
 }
 
