@@ -87,6 +87,7 @@ h5,
 h6 {
   color: var(--heading-color);
   font-family: var(--heading-font);
+  font-weight: 700;
 }
 
 /* PHP Email Form Messages
@@ -831,6 +832,7 @@ section,
   text-align: center;
   padding-bottom: 20px;
   position: relative;
+  max-width: 900px;
 }
 
 .section-title h2 {
@@ -844,7 +846,7 @@ section,
   content: "";
   width: 50px;
   height: 2px;
-  background: var(--accent-color);
+  /* background: var(--accent-color); */
   display: inline-block;
 }
 
@@ -870,7 +872,7 @@ section,
     content: "";
     width: 20px;
     height: 2px;
-    background: var(--accent-color);
+    /* background: var(--accent-color); */
     display: inline-block;
   }
 }
@@ -1183,6 +1185,31 @@ section,
   background-color: var(--accent-color);
   border-radius: 2px;
 }
+.about-copy ul {
+    list-style: none;
+    padding: 0;
+    margin: 30px 0
+}
+
+.about-copy li {
+    margin: 5px 0;
+    color: #fff;
+}
+
+.about-copy li i {
+    color: #f00;
+    margin-right: 10px
+}
+.about-copy p {
+    padding-left: 30px;
+    line-height: 24px;
+}
+
+.text-link {
+    display: inline-flex;
+    gap: 9px;
+    align-items: center;
+}
 
 @media (max-width: 576px) {
   .about .info-block h2 {
@@ -1361,7 +1388,141 @@ section,
   color: color-mix(in srgb, var(--default-color), transparent 40%);
   font-weight: 500;
 }
+.page-hero {
+    padding: 170px 0 85px;
+    text-align: center;
+    background: radial-gradient(circle at 50% 20%, #281315, #111 55%)
+}
 
+.page-hero .container {
+    max-width: 900px
+}
+
+.page-hero h1 {
+    margin: 18px 0;
+    color: #fff;
+    font: 800 clamp(42px, 6vw, 68px)/1.05 Raleway, sans-serif
+}
+
+.page-hero p {
+    margin: auto;
+    color: #aaa;
+    font-size: 18px;
+    line-height: 1.8
+}
+
+.about-main {
+    padding: 95px 0;
+    background: #121212
+}
+
+.about-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 70px;
+    align-items: center
+}
+
+.about-photo {
+    width: 100%;
+    height: 520px;
+    object-fit: cover;
+    border-radius: 18px
+}
+
+.about-copy h2,
+.section-title h2 {
+font-size: 2rem;
+    font-weight: 800;
+    line-height: 1.3;
+    margin-bottom: 1.25rem;
+    position: relative;
+}
+
+.about-copy p {
+    color: #999;
+    line-height: 1.85;
+    font-size: 16px
+}
+
+.about-copy .btn-primary-red {
+    margin-top: 15px
+}
+
+.values-section {
+    padding: 95px 0;
+    background: #0e0e0e
+}
+
+.section-title {
+    text-align: center;
+    max-width: 900px;
+    margin: 0 auto 50px
+}
+
+.values-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 22px
+}
+
+.values-grid article {
+    padding: 35px;
+    background: #181818;
+    border: 1px solid #292929;
+    border-radius: 14px
+}
+
+.values-grid article>span {
+    color: #e60000;
+    font: 700 18px Poppins, sans-serif
+}
+
+.values-grid h3 {
+    color: #fff;
+    font: 700 26px Raleway, sans-serif;
+    margin: 20px 0 12px
+}
+
+.values-grid p {
+    color: #999;
+    line-height: 1.75
+}
+
+@media(max-width:900px) {
+
+    .about-grid,
+    .values-grid {
+        grid-template-columns: 1fr
+    }
+
+    .about-photo {
+        height: 400px
+    }
+}
+
+@media(max-width:560px) {
+
+    .about-main,
+    .values-section {
+        padding: 70px 0
+    }
+
+    .about-photo {
+        height: 300px
+    }
+}
+
+.about-main .about-grid h2::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 60px;
+    height: 3px;
+    /* background-color: var(--accent-color); */
+    border-radius: 2px;
+}
 /*--------------------------------------------------------------
 # Services Section
 --------------------------------------------------------------*/
@@ -2694,7 +2855,6 @@ section,
   font-size: 15px;
   line-height: 1.7;
   color: color-mix(in srgb, var(--contrast-color), transparent 15%);
-  margin-bottom: 35px;
 }
 
 .contact .info-panel .panel-stats {
@@ -2705,12 +2865,12 @@ section,
 }
 
 .contact .info-panel .panel-stats .single-stat {
-  text-align: center;
+  text-align: left;
 }
 
 .contact .info-panel .panel-stats .single-stat strong {
   display: block;
-  font-size: 22px;
+  font-size: 1rem;
   font-weight: 700;
   color: var(--contrast-color);
   margin-bottom: 4px;
@@ -2767,6 +2927,7 @@ section,
   background: var(--surface-color);
   padding: 50px 45px;
   height: 100%;
+  text-align: left;
 }
 
 .contact .form-panel .form-intro {
@@ -4616,4 +4777,132 @@ section,
   font-weight: 700;
   color: #6b7280;
   white-space: nowrap;
+}
+
+.section-heading {
+    max-width: 720px;
+    margin-bottom: 45px;
+}
+
+.section-heading>span,
+.eyebrow {
+    color: #ed1111;
+    font: 600 18px Poppins, sans-serif;
+    letter-spacing: 1.4px;
+    text-transform: uppercase;
+}
+
+.section-heading h2,
+.about-copy h2,
+.cta-inner h2 {
+    margin: 12px 0 15px;
+    color: #fff;
+    /* font: 700 clamp(34px, 4vw, 52px)/1.1 Raleway, sans-serif; */    
+    font-size: 2.125rem;
+    font-weight: 700;
+
+}
+.badge-label {
+    display: inline-block;
+    padding: 11px 25px;
+    border-radius: 5px;
+    background: rgba(130, 0, 0, .28);
+    color: #ff1616;
+    font: 600 14px/1 Poppins, sans-serif;
+    letter-spacing: 1.1px;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+}
+.m-t-0{margin-top: 0 !important;}
+.btn-primary-red,
+.btn-outline-light {
+    min-height: 62px;
+    padding: 0 32px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
+    font: 700 17px Poppins, sans-serif;
+    text-decoration: none;
+    transition: .25s ease;
+}
+
+.btn-primary-red {
+    background: #f00000;
+    color: #fff;
+    box-shadow: 0 10px 30px rgba(230, 0, 0, .18);
+}
+
+.btn-primary-red:hover {
+    color: #fff;
+    background: #c90000;
+    transform: translateY(-2px);
+}
+
+.service-list {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 0;
+  margin-top: 20px;
+}
+
+.service-list span {
+  position: relative;
+
+  color: #ffffff;
+  font-size: 16px;
+  font-weight: 500;
+
+  padding: 0 18px;
+  line-height: 1.5;
+}
+
+/* Bullet between items */
+.service-list span:not(:last-child)::after {
+  content: "•";
+  position: absolute;
+  right: -2px;
+  top: 50%;
+  transform: translateY(-50%);
+  color: var(--accent-color);
+  font-size: 18px;
+  font-weight: 700;
+}
+/* .service-list span::before {
+  content: "•";
+  color: var(--accent-color);
+  margin-right: 8px;
+  font-weight: 700;
+} */
+@media (max-width: 767px) {
+
+  .service-list {
+    justify-content: center;
+    row-gap: 8px;
+  }
+
+  .service-list span {
+    font-size: 14px;
+    padding: 0 12px;
+  }
+
+}
+.cta-section {
+    padding: 60px 0;
+    background: #171111;
+    border-top: 1px solid #2b1b1b;
+    border-bottom: 1px solid #2b1b1b
+}
+
+.cta-inner {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 30px
+}
+
+.cta-inner h2 {
+    margin-bottom: 0;
 }

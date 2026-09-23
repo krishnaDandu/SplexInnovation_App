@@ -22,7 +22,7 @@
 }
 
 .about-main {
-    padding: 95px 0;
+    padding: 150px 0 70px;
     background: #121212
 }
 
@@ -42,17 +42,16 @@
 
 .about-copy h2,
 .section-title h2 {
-font-size: 2.125rem;
+font-size: 2rem;
     font-weight: 800;
     line-height: 1.3;
     margin-bottom: 1.25rem;
     position: relative;
-    padding-bottom: 1.25rem;
 }
 
 .about-copy p {
     color: #999;
-    line-height: 1.85;
+    line-height: 1.6;
     font-size: 16px
 }
 
@@ -61,14 +60,15 @@ font-size: 2.125rem;
 }
 
 .values-section {
-    padding: 95px 0;
+    padding: 50px 0;
     background: #0e0e0e
 }
 
 .section-title {
     text-align: center;
     max-width: 700px;
-    margin: 0 auto 50px
+    margin: 0 auto 0px;
+    padding-bottom: 0px
 }
 
 .values-grid {
@@ -131,6 +131,9 @@ font-size: 2.125rem;
     left: 0;
     width: 60px;
     height: 3px;
-    background-color: var(--accent-color);
+    /* background-color: var(--accent-color); */
+    /*  */
     border-radius: 2px;
 }
+
+.p-t-55{padding-top:55px}
