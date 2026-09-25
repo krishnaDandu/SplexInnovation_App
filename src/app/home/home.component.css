@@ -11,8 +11,8 @@
 }
 
 .hero-copy {
-    max-width: 900px;
-    margin: 0 auto;
+    /* max-width: 900px; */
+    margin: 0 2%;
     text-align: center;
 }
 
@@ -30,10 +30,13 @@
 }
 
 .hero-copy p {
-    max-width: 800px;
-    margin: 0 auto;
-    color: #b5b5b5;
-    font: 400 16x/1.6 Roboto, sans-serif;
+    /* max-width: 800px; */
+    /* margin: 0 auto; */
+    color: #ffe8e9;
+    font-size: 22px;
+    line-height: 35px;
+    font-family: 'Raleway';
+    /* font: 400 16x/1.6 Roboto, sans-serif; */
 }
 
 .hero-actions {
