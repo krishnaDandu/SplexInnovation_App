@@ -1,7 +1,7 @@
 .home-hero {
     position: relative;
     overflow: hidden;
-    padding: 150px 0 85px;
+    padding: 130px 0 50px;
     background: radial-gradient(circle at 50% 25%, #241315 0, #121010 38%, #0f0f0f 75%);
 }
 
@@ -145,7 +145,7 @@
 
 .intro-section,
 .home-about {
-    padding: 60px 0;
+    padding: 40px 0;
     background: #121212;
 }
 
@@ -318,6 +318,11 @@
 
     .intro-section,
     .home-about {
-        padding: 70px 0
+        padding: 25px 0
     }
+    .home-hero{padding:120px 0 50px}
+    .cta-section{padding:30px 0}
+    .site-footer{padding:50px 7% 25px}
+    .page-hero{padding:120px 0 20px !important;}
+    .services-main{padding: 30px 0;}
 }

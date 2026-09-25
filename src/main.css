@@ -1508,6 +1508,14 @@ font-size: 2rem;
     .about-photo {
         height: 400px
     }
+        .service-grid {
+        grid-template-columns: 1fr 1fr
+    }
+
+    .services-cta .container {
+        flex-direction: column;
+        align-items: flex-start
+    }
 }
 
 @media(max-width:560px) {
@@ -1519,6 +1527,17 @@ font-size: 2rem;
 
     .about-photo {
         height: 300px
+    }
+        .service-grid {
+        grid-template-columns: 1fr
+    }
+
+    .services-main {
+        padding: 30px 0
+    }
+
+    .services-cta h2 {
+        font-size: 30px
     }
 }
 
@@ -3921,7 +3940,7 @@ font-size: 2rem;
   box-shadow: 0 8px 20px color-mix(in srgb, var(--accent-color), transparent 65%);
 }
 .services-main {
-    padding: 25px 0 70px 0;
+    padding: 25px 0 50px 0;
     background: #121212
 }
 .service-grid {
@@ -4876,6 +4895,7 @@ font-size: 2rem;
     margin-bottom: 20px;
 }
 .m-t-0{margin-top: 0 !important;}
+.m-t-25{margin-top: 25 !important;}
 .m-b-25{margin-bottom: 25px !important;}
 .m-b-0{margin-bottom: 0 !important;}
 .m-t-0{margin-top: 0 !important;}
