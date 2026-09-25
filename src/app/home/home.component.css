@@ -145,7 +145,7 @@
 
 .intro-section,
 .home-about {
-    padding: 95px 0;
+    padding: 60px 0;
     background: #121212;
 }
 
@@ -190,7 +190,7 @@
 .service-card h3 {
     margin: 24px 0 12px;
     color: #fff;
-    font: 600 21px Raleway, sans-serif;
+    font: 700 1.75rem Raleway, sans-serif;
 }
 
 .service-card p {

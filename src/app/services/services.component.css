@@ -24,62 +24,6 @@
     line-height: 1.6
 }
 
-.services-main {
-    padding: 25px 0 70px 0;
-    background: #121212
-}
-
-.service-grid {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 22px
-}
-
-.service-card {
-    padding: 35px;
-    background: #181818;
-    border: 1px solid #292929;
-    border-radius: 14px;
-    transition: .25s
-}
-
-.service-card:hover {
-    transform: translateY(-5px);
-    border-color: #651919
-}
-
-.icon {
-    width: 56px;
-    height: 56px;
-    display: grid;
-    place-items: center;
-    border-radius: 12px;
-    background: rgba(230, 0, 0, .1);
-    color: #f00;
-    font-size: 24px
-}
-
-.service-card h2 {
-    color: #fff;
-    font: 800 2rem Raleway, sans-serif !important;
-    margin: 22px 0 12px;
-}
-
-.service-card p {
-    color: #999;
-    line-height: 1.75;
-}
-
-.service-card a {
-    color: #fff;
-    text-decoration: none;
-    font-weight: 600
-}
-
-.service-card a:hover {
-    color: #f00
-}
-
 .services-cta {
     padding: 65px 0;
     background: #171111;
@@ -124,18 +68,23 @@
     }
 }
 
-ul{
+ul {
     list-style: none;
     padding: 0;
     margin: 30px 0;
 }
-.service-grid li{
+
+.service-grid li {
     margin: 15px 0;
     color: #bbb;
     display: flex;
 }
-.service-grid li i{
+
+.service-grid li i {
     color: #f00 !important;
     margin-right: 10px;
 }
-.m-b-70{margin-bottom: 70px}
+
+.m-b-70 {
+    margin-bottom: 70px
+}
