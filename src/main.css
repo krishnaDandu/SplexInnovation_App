@@ -4862,7 +4862,9 @@ section,
 # Starter Section Section
 --------------------------------------------------------------*/
 .starter-section {
-  /* Add your styles here */
+  padding: 1.5rem 0;
+   background: #f5f5f5;
+  border-radius: 8px;
 }
 
 .pd-t-120 {
