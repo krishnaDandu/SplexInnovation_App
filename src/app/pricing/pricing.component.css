@@ -553,7 +553,7 @@
 
 @media (max-width: 767px) {
   .pricing {
-    padding: 100px 0 60px;
+    padding: 100px 0 30px;
   }
 
   .pricing .row > [class*="col-"] {
