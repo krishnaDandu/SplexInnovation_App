@@ -13,6 +13,7 @@ export class HeaderComponent {
 
   closeMenu(): void {
     this.menuOpen = false;
+    window.scrollTo({ top: 0, behavior: 'smooth' });
   }
 
   toggleMenu(): void {

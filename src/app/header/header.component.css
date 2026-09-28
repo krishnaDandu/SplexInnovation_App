@@ -20,19 +20,38 @@
   box-shadow: 0 12px 35px rgba(0, 0, 0, .18);
 }
 
-.brand { display: inline-flex; align-items: center; margin-right: auto; }
-.brand img { width: 220px; max-height: 54px; object-fit: contain; display: block; }
+.brand {
+  display: inline-flex;
+  align-items: center;
+  margin-right: auto;
+}
 
-.main-nav { display: flex; align-items: center; gap: 34px; }
+.brand img {
+  width: 220px;
+  max-height: 54px;
+  object-fit: contain;
+  display: block;
+}
+
+.main-nav {
+  display: flex;
+  align-items: center;
+  gap: 34px;
+}
+
 .main-nav a {
-  color: #aaa;
+  color: #000000;
   font-family: var(--nav-font, Poppins, sans-serif);
   font-size: 15px;
   font-weight: 500;
   text-decoration: none;
   transition: color .25s ease;
 }
-.main-nav a:hover, .main-nav a.active { color: var(--splex-red); }
+
+.main-nav a:hover,
+.main-nav a.active {
+  color: var(--splex-red);
+}
 
 .nav-cta {
   display: inline-flex;
@@ -47,14 +66,35 @@
   text-decoration: none;
   transition: transform .2s ease, background .2s ease;
 }
-.nav-cta:hover { background: #c90000; transform: translateY(-1px); }
-.mobile-cta, .menu-toggle { display: none; }
+
+.nav-cta:hover {
+  background: #c90000;
+  transform: translateY(-1px);
+}
+
+.mobile-cta,
+.menu-toggle {
+  display: none;
+}
 
 @media (max-width: 900px) {
-  .site-header { padding: 8px 10px; }
-  .header-inner { padding: 7px 16px; border-radius: 0 0 26px 26px; }
-  .brand img { width: 190px; }
-  .desktop-cta { display: none; }
+  .site-header {
+    padding: 8px 10px;
+  }
+
+  .header-inner {
+    padding: 7px 16px;
+    border-radius: 0 0 26px 26px;
+  }
+
+  .brand img {
+    width: 190px;
+  }
+
+  .desktop-cta {
+    display: none;
+  }
+
   .menu-toggle {
     display: inline-flex;
     width: 44px;
@@ -68,6 +108,7 @@
     font-size: 22px;
     cursor: pointer;
   }
+
   .main-nav {
     position: absolute;
     top: calc(100% + 6px);
@@ -80,9 +121,20 @@
     gap: 4px;
     background: #fff;
     border-radius: 18px;
-    box-shadow: 0 15px 35px rgba(0,0,0,.25);
+    box-shadow: 0 15px 35px rgba(0, 0, 0, .25);
   }
-  .main-nav.open { display: flex; }
-  .main-nav a { padding: 12px 14px; color: #555; }
-  .mobile-cta { display: flex; margin-top: 6px; }
+
+  .main-nav.open {
+    display: flex;
+  }
+
+  .main-nav a {
+    padding: 12px 14px;
+    color: #555;
+  }
+
+  .mobile-cta {
+    display: flex;
+    margin-top: 6px;
+  }
 }

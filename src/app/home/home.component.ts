@@ -10,8 +10,31 @@ import { RouterLink } from '@angular/router';
 })
 export class HomeComponent {
   readonly services = [
-    { icon: 'bi-laptop', title: 'Website Design & Development', text: 'Modern, responsive websites designed around your brand, customers and business goals.' },
-    { icon: 'bi-phone', title: 'Application Development', text: 'Reliable web and application solutions that simplify processes and create better digital experiences.' },
-    { icon: 'bi-headset', title: 'Support & Maintenance', text: 'Ongoing technical support, updates and maintenance to keep your digital platforms running smoothly.' }
+    { icon: 'bi-laptop', title: 'Web & Digital Solutions', text: 'Modern websites and digital experiences designed around your brand, customers, and business objectives.' },
+    { icon: 'bi-phone', title: 'Software & Application Development', text: 'Custom web applications and business software designed to simplify processes, improve efficiency, and support growth.' },
+    { icon: 'bi-headset', title: 'Support & Maintenance', text: 'Keep your applications running smoothly with ongoing maintenance, technical support, updates, enhancements, and issue resolution.' }
   ];
+
+   readonly services2 = [
+    {
+    id: 1,
+    title: 'Digital User Experience',
+    list : [ 'Responsive and Interactive Design', 'Digital Experience Platform (DXP)', 'Analytics-Driven Customer Insights' ],
+    footerLink: '/contactus',
+    description: 'We create digital experiences that are intuitive, engaging and effective. Our team of designers and developers work together to craft user interfaces that are visually appealing and easy to use.',
+   },
+    {
+    id: 2,
+    title: 'Digital User Experience',
+    list : [ 'Responsive and Interactive Design', 'Digital Experience Platform (DXP)', 'Analytics-Driven Customer Insights' ],
+    footerLink: '/contactus',
+    description: 'We create digital experiences that are intuitive, engaging and effective. Our team of designers and developers work together to craft user interfaces that are visually appealing and easy to use.',
+   },
+
+
+   ]
+
 }
+
+
+

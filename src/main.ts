@@ -1,15 +1,27 @@
 import { bootstrapApplication } from '@angular/platform-browser';
-import { provideRouter, withInMemoryScrolling } from '@angular/router';
+import { provideRouter, withHashLocation, withInMemoryScrolling } from '@angular/router';
 import { AppComponent } from './app/app.component';
 import { routes } from './app/app.routes';
 import { provideZoneChangeDetection } from '@angular/core';
 
+// bootstrapApplication(AppComponent, {
+//   providers: [
+//     provideZoneChangeDetection({ eventCoalescing: true }),
+//     provideRouter(
+//       routes,
+//       withHashLocation()
+//       //withInMemoryScrolling({ scrollPositionRestoration: 'enabled', anchorScrolling: 'enabled' })
+//     )
+//   ]
+// }).catch((err) => console.error(err));
 bootstrapApplication(AppComponent, {
   providers: [
-    provideZoneChangeDetection({ eventCoalescing: true }),
     provideRouter(
       routes,
-      withInMemoryScrolling({ scrollPositionRestoration: 'enabled', anchorScrolling: 'enabled' })
+      withInMemoryScrolling({
+        scrollPositionRestoration: 'top',
+        anchorScrolling: 'enabled'
+      })
     )
   ]
-}).catch((err) => console.error(err));
+}).catch(err => console.error(err));
