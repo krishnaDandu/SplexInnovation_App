@@ -40,7 +40,7 @@
 .services-cta h2 {
     color: #fff;
     margin: 10px 0 0;
-    font: 700 2.125rem Raleway, sans-serif
+    /* font: 700 2.125rem Raleway, sans-serif */
 }
 
 @media(max-width:900px) {
